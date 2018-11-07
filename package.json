@@ -1,0 +1,49 @@
+{
+  "name": "@ntt/flow",
+  "version": "0.0.1",
+  "description": "The sequence of initialization, modification, aggregation, or other processes through which a data entity passes from instantiation to persistence.",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "prepare": "npm run build",
+    "build": "tsc"
+  },
+  "files": ["lib"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntt-city/ntt-flow.git"
+  },
+  "keywords": [
+    "Effect",
+    "Entity",
+    "Flow",
+    "Message",
+    "Reducer"
+  ],
+  "author": "Lucas Martínez Oromí",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntt-city/ntt-flow/issues"
+  },
+  "homepage": "https://github.com/ntt-city/ntt-flow#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  }
+}
