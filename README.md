@@ -5,26 +5,36 @@ Flow uses pure functions and does not update the data in-place, but instead alwa
 
 Flow only adds a dependency to [immutable](https://facebook.github.io/immutable-js/)
 
-## Efects
+### Efects
 
 Flow will attempt to construct some effect mechanism.
 
-## Interceptors
+### Interceptors
 
 Flow will attempt to construct some interceptor mechanism.
 
-## Messages
+### Messages
 
 Flow defines Message but it does not implement a delivery mechanism (http, sockets)
 
-## Reducers
+### Reducers
 
 Flow implements logical and mathematical reducers.
 
-## Rules
+### Rules
 
 Flow will attempt to construct some business rules mechanism.
 
-## Types
+### Types
 
 Flow defines general types such as ValueType, SimpleObject, FlatObject and Entity.
+
+## Development
+
+### Publish
+
+By default all scoped packages are published privately. To publish a scoped package publicly, pass the access flag with the value public:
+
+```
+npm publish --access public
+```
