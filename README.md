@@ -1,6 +1,10 @@
 # Entity Flow (ntt-flow)
 The sequence of initialization, modification, aggreation, or other processes through which a data entity passes from instantiation to persistence.
 
+Flow uses pure functions and does not update the data in-place, but instead always yields new updated data.
+
+Flow only adds a dependency to [immutable](https://facebook.github.io/immutable-js/)
+
 ## Efects
 
 Flow will attempt to construct some effect mechanism.
