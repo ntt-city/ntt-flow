@@ -1,0 +1,1 @@
+// reducers are pure functions and the name starts with "reduce"

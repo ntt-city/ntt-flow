@@ -1,0 +1,1 @@
+// a rule is a constant object the name ends with "Rule"

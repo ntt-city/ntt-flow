@@ -1,19 +1,19 @@
 {
     "compilerOptions": {
-        "target": "ES2015",
         "module": "amd",
+        "target": "es5",
         "declaration": true,
-        "outDir": "lib/index.js",
+        "outDir": "dist",
         "strict": true,
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "outFile": "../../built/local/tsc.js",
+        // "outFile": "dist/index.js",
         "sourceMap": true
     },
     "include": [
         "src/**/*",
-        "typings/*"
+        "typings/*.d.ts"
     ],
     "exclude": [
         "node_modules",

@@ -1,0 +1,1 @@
+// schemas are JSON files and the file name ends with ".schema.json"

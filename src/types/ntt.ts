@@ -4,6 +4,12 @@ declare namespace ntt {
     
     type KeyType = number | string;
 
+    interface FlatArray extends Array<ValueType> { }
+
+    interface FlatObject {
+        [key: string]: FlatArray | ValueType;
+    }
+    
     export type EntityModel<T extends FlatObject, K extends keyof T> = Omit<T, K>;
 
     export type EntityKey<T extends FlatObject, K extends keyof T> = Pick<T, K>;

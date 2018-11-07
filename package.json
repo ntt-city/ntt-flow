@@ -2,8 +2,8 @@
   "name": "ntt-flow",
   "version": "0.0.1",
   "description": "The sequence of initialization, modification, aggregation, or other processes through which a data entity passes from instantiation to persistence.",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "main": "dis/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "major": "npm version major & npm run publish",
@@ -13,7 +13,9 @@
     "publish": "npm publish --access public",
     "test": "jest"
   },
-  "files": ["lib"],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ntt-city/ntt-flow.git"
