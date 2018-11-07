@@ -1,5 +1,5 @@
 # Entity Flow (ntt-flow)
-The sequence of initialization, modification, aggreation, or other processes through which a data entity passes from instantiation to persistence.
+The sequence of initialization, modification, aggregation, or other processes through which a data entity passes from instantiation to persistence.
 
 Flow uses pure functions and does not update the data in-place, but instead always yields new updated data.
 
