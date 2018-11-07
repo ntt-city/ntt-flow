@@ -1,6 +1,6 @@
 {
   "name": "ntt-flow",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The sequence of initialization, modification, aggregation, or other processes through which a data entity passes from instantiation to persistence.",
   "main": "dis/index.js",
   "types": "dist/index.d.ts",
