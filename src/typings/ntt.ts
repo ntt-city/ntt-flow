@@ -1,6 +1,8 @@
 declare namespace ntt {
     
     type KeyArray = Array<KeyType>;
+
+    type KeyPath = Iterable<KeyType>;
     
     type KeyType = number | string;
 
@@ -13,12 +15,6 @@ declare namespace ntt {
     export type EntityModel<T extends FlatObject, K extends keyof T> = Omit<T, K>;
 
     export type EntityKey<T extends FlatObject, K extends keyof T> = Pick<T, K>;
-
-    interface SimpleArray extends Array<SimpleObject | ValueType> { }
-
-    interface SimpleObject {
-        [key: string]: SimpleArray | SimpleObject | ValueType;
-    }
 
     export type PropertyType<T extends SimpleObject, K extends keyof T, P extends T[K]> = P;
 

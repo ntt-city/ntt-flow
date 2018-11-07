@@ -9,11 +9,11 @@
         "removeComments": true,
         "preserveConstEnums": true,
         // "outFile": "dist/index.js",
-        "sourceMap": true
+        "sourceMap": true,
+        "lib": ["es2015", "es2015.iterable", "dom"]
     },
     "include": [
-        "src/**/*",
-        "typings/*.d.ts"
+        "src/**/*"
     ],
     "exclude": [
         "node_modules",

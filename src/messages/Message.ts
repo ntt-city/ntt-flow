@@ -1,5 +1,9 @@
+import { Identity } from '../entities';
+
 interface Message {
-    body: ValueType;
+    content: Content;
+    recipient: Identity;
+    sender: Identity;
     type: string;
 }
 
