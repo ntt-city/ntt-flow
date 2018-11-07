@@ -6,9 +6,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "major": "npm version major & npm run publish",
-    "minor": "npm version minor & npm run publish",
-    "patch": "npm version patch & npm run publish",
+    "major": "npm version major",
+    "minor": "npm version minor",
+    "patch": "npm version patch",
     "prepare": "npm run build",
     "publish": "npm publish --access public",
     "test": "jest"
