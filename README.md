@@ -5,7 +5,7 @@ Flow uses pure functions and does not update the data in-place, but instead alwa
 
 Flow only adds a dependency to [immutable](https://facebook.github.io/immutable-js/)
 
-### Efects
+### Effects
 
 Flow will attempt to construct some effect mechanism.
 
