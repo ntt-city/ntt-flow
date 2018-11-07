@@ -2,10 +2,18 @@ import { Reducer } from './Reducer';
 
 const DECREMENT = 'DECREMENT';
 const INCREMENT = 'INCREMENT';
+const PRODUCT = 'GEOMETRIC_PRODUCT';
+const REFLECTION = 'GEOMETRIC_REFLECTION';
+const ROTATION = 'GEOMETRIC_ROTATION';
+const TRANSLATION = 'GEOMETRIC_TRANSLATION';
 
 export const matrixActions = {
     DECREMENT,
-    INCREMENT
+    INCREMENT,
+    PRODUCT,
+    REFLECTION,
+    ROTATION,
+    TRANSLATION
 };
 
 // https://vincent.billey.me/pure-javascript-immutable-array/

@@ -1,5 +1,11 @@
 declare type Content = SimpleObject | ValueType;
 
+declare interface FlatArray extends Array<ValueType> { }
+
+declare interface FlatObject {
+    [key: string]: FlatArray | ValueType;
+}
+
 declare type Key = number | string;
 
 declare type KeyPath = Iterable<Key>;
@@ -11,6 +17,8 @@ declare interface SimpleArray extends Array<SimpleObject | ValueType> { }
 declare interface SimpleObject {
     [key: string]: SimpleArray | SimpleObject | ValueType;
 }
+
+declare type Stringify<T> = { [K in keyof T]: string };
 
 declare type ValueType = boolean | Date | number | string | symbol;
 

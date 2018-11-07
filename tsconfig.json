@@ -6,7 +6,6 @@
         "outDir": "dist",
         // "outFile": "dist/index.js",
         "strict": true,
-        "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,

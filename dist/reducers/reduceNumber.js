@@ -2,10 +2,14 @@ define(["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var DECREMENT = 'DECREMENT';
+    var DIVIDE = 'DIVIDE';
     var INCREMENT = 'INCREMENT';
+    var MULTIPLY = 'MULTIPLY';
     exports.numberActions = {
         DECREMENT: DECREMENT,
-        INCREMENT: INCREMENT
+        DIVIDE: DIVIDE,
+        INCREMENT: INCREMENT,
+        MULTIPLY: MULTIPLY
     };
     var reduceNumber = function (number, action) {
         if (isNaN(number) || isFinite(number)) {

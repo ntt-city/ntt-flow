@@ -1,11 +1,15 @@
 import { Reducer } from './Reducer';
 
-const DECREMENT = 'DECREMENT';
-const INCREMENT = 'INCREMENT';
+const DECREMENT = 'DECREMENT'; // substraction
+const DIVIDE = 'DIVIDE';
+const INCREMENT = 'INCREMENT'; // addition
+const MULTIPLY = 'MULTIPLY';
 
 export const numberActions = {
     DECREMENT,
-    INCREMENT
+    DIVIDE,
+    INCREMENT,
+    MULTIPLY
 };
 
 // https://vincent.billey.me/pure-javascript-immutable-array/
