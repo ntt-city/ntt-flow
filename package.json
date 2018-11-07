@@ -12,7 +12,7 @@
     "major": "npm version major",
     "minor": "npm version minor",
     "patch": "npm version patch",
-    "publish": "npm publish --access public",
+    "publish-public": "npm publish --access public",
     "test": "jest"
   },
   "repository": {
