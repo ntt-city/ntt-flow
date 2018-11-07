@@ -32,5 +32,5 @@ interface ListAction {
         type: typeof UPDATE_IN;
     };
 }
-declare const reduceList: Reducer<List, ListAction[keyof ListAction]>;
+declare const reduceList: Reducer<List<any>, ListAction[keyof ListAction]>;
 export default reduceList;

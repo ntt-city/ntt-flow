@@ -1,0 +1,65 @@
+import { Cursor } from 'immutable';
+import { Reducer } from './Reducer';
+
+const DELETE_IN = 'DELETE_IN';
+const REMOVE_IN = 'REMOVE_IN';
+const SET = 'SET';
+const SET_IN = 'SET_IN';
+const UPDATE = 'UPDATE';
+const UPDATE_IN = 'UPDATE_IN';
+
+export const cursorActions = {
+    DELETE_IN,
+    REMOVE_IN,
+    SET,
+    SET_IN,
+    UPDATE,
+    UPDATE_IN
+};
+
+interface CursorAction {
+    DELETE_IN: {
+        keyPath: KeyPath;
+        value: any;
+        type: typeof DELETE_IN;
+    };
+    REMOVE_IN: {
+        keyPath: KeyPath;
+        value: any;
+        type: typeof REMOVE_IN;
+    };
+    SET: {
+        key: string;
+        value: any;
+        type: typeof SET;
+    };
+    SET_IN: {
+        keyPath: KeyPath;
+        value: any;
+        type: typeof SET_IN;
+    };
+    UPDATE: {
+        key: string;
+        value: any;
+        type: typeof UPDATE;
+    };
+    UPDATE_IN: {
+        keyPath: KeyPath;
+        value: any;
+        type: typeof UPDATE_IN;
+    };
+}
+
+const reduceCursor: Reducer<Cursor, CursorAction[keyof CursorAction]> = (cursor, action): Cursor => {
+    switch (action.type) {
+        case DELETE_IN: return cursor.deleteIn(action.keyPath, action.value);
+        case REMOVE_IN: return cursor.deleteIn(action.keyPath, action.value);
+        case SET: return cursor.set(action.key, action.value);
+        case SET_IN: return cursor.setIn(action.keyPath, action.value);
+        case UPDATE: return cursor.update(action.key, action.value);
+        case UPDATE_IN: return cursor.updateIn(action.keyPath, action.value);
+        default: return cursor;
+    }
+};
+
+export default reduceCursor;

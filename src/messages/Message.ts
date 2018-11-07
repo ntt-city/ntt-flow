@@ -1,9 +1,9 @@
-import { Identity } from '../entities';
+// import { Identity } from 'src/entities';
 
 interface Message {
     content: Content;
-    recipient: Identity;
-    sender: Identity;
+    // recipient: Identity;
+    // sender: Identity;
     type: string;
 }
 

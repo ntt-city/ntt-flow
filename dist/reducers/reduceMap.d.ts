@@ -32,5 +32,5 @@ interface MapAction {
         type: typeof UPDATE_IN;
     };
 }
-declare const reduceMap: Reducer<Map, MapAction[keyof MapAction]>;
+declare const reduceMap: Reducer<Map<string, any>, MapAction[keyof MapAction]>;
 export default reduceMap;

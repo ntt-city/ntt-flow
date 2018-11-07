@@ -1,3 +1,4 @@
+///<reference path='../../node_modules/immutable/dist/Immutable.d.ts'/>
 import { List } from 'immutable';
 import { Reducer } from './Reducer';
 
@@ -36,7 +37,7 @@ interface ListAction {
     };
 }
 
-const reduceList: Reducer<List, ListAction[keyof ListAction]> = (list, action): List => {
+const reduceList: Reducer<List<any>, ListAction[keyof ListAction]> = (list, action): List<any> => {
     switch (action.type) {
         case SET: return list.set(action.key, action.value);
         case SET_IN: return list.setIn(action.keyPath, action.value);

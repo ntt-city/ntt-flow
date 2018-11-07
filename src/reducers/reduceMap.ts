@@ -36,7 +36,7 @@ interface MapAction {
     };
 }
 
-const reduceMap: Reducer<Map, MapAction[keyof MapAction]> = (map, action): Map => {
+const reduceMap: Reducer<Map<string, any>, MapAction[keyof MapAction]> = (map, action): Map<string, any> => {
     switch (action.type) {
         case SET: return map.set(action.key, action.value);
         case SET_IN: return map.setIn(action.keyPath, action.value);
