@@ -13,9 +13,6 @@
     "publish": "npm publish --access public",
     "test": "jest"
   },
-  "files": [
-    "dist"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ntt-city/ntt-flow.git"
