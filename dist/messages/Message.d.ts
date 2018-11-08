@@ -1,5 +1,5 @@
 interface Message {
-    body: ValueType;
+    content: Content;
     type: string;
 }
 export default Message;

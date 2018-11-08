@@ -1,0 +1,1 @@
+{"version":3,"file":"stringifyProps.js","sourceRoot":"","sources":["../../src/effects/stringifyProps.ts"],"names":[],"mappings":";;;IAAA,SAAS,cAAc,CAAI,GAAM;QAC7B,IAAM,MAAM,GAAG,EAAkB,CAAC;QAClC,KAAK,IAAM,IAAI,IAAI,GAAG,EAAE;YACpB,MAAM,CAAC,IAAI,CAAC,GAAG,MAAM,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC,CAAC;SACpC;QACD,OAAO,MAAM,CAAC;IAClB,CAAC;IAED,kBAAe,cAAc,CAAC"}

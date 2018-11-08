@@ -4,20 +4,31 @@
         "target": "es5",
         "declaration": true,
         "outDir": "dist",
+        // "outFile": "dist/index.js",
         "strict": true,
-        "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        // "outFile": "dist/index.js",
-        "sourceMap": true
+        "sourceMap": true,
+        "lib": ["esnext", "dom"],
+        "rootDir": "src",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "importHelpers": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true
     },
-    "include": [
-        "src/**/*",
-        "typings/*.d.ts"
-    ],
     "exclude": [
         "node_modules",
-        "**/*.spec.ts"
+        "**/*.spec.ts",
+        "dist",
+        "scripts",
+        "acceptance-tests",
+        "webpack",
+        "jest",
+        "src/setupTests.ts"
     ],
     "typeRoots" : ["./typings", "./node_modules/@types/", "../node_modules/@types/"]
 }

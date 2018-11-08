@@ -1,1 +1,1 @@
-// effects are pure functions and the name starts with "do"
+// effects are pure functions and the name starts with "use"

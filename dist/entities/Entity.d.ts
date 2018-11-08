@@ -1,3 +1,3 @@
-interface Entity extends ntt.SimpleObject {
+interface Entity extends SimpleObject {
 }
 export default Entity;
